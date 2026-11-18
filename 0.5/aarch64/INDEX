@@ -2,27 +2,27 @@ format 1
 repository stafeto
 series 0.5
 arch aarch64
-serial 1
-expires 2026-12-16T17:05:49Z
+serial 2
+expires 2026-12-18T13:28:16Z
 
 name bash
-version 5.3-1
+version 5.3-2
 license GPL-3.0-or-later
 size 1044480
-sha256 66085472155d0ad69a57aeaec67fe3d5c739a799edf2b7223410da3a58300646
-recipe 27a8faa13e164b93efb76a0518c0e0317f53237b74bc58d260aaace2da2ef70a
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/bash-5.3-1.stpkg
-source https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/bash-5.3-1-src.tar.xz
+sha256 f64dff408fb9d9e98f7505e312bd8844b269ee8e06d84ef7f37ee472f17f966c
+recipe 8a0d83faeeefadcd670e549d4b09857b079fea8627bfb4c2894f709e5c54a3dd
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/bash-5.3-2.stpkg
+source https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/bash-5.3-2-src.tar.xz
 summary GNU Bash shell
 
 name busybox
-version 1.37.0-1
+version 1.37.0-2
 license GPL-2.0-only
 size 937984
-sha256 861f8e232a7b460a26c701578cb7bedc4c6cdc24efd78e1cf615ad395812ba38
-recipe 3bc1dc6d1690618b218ebdbd0f0a32daeebda13916be14e0fe3c60b6cf462616
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/busybox-1.37.0-1.stpkg
-source https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/busybox-1.37.0-1-src.tar.xz
+sha256 4db70bb5038344ef554a40d809b24199cda746939ddfa95aa6dfd31a31811732
+recipe f89cc438a7a46ecd50a64574bc0336932291f6214b65d824e128c02f76f7bbe3
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/busybox-1.37.0-2.stpkg
+source https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/busybox-1.37.0-2-src.tar.xz
 summary BusyBox utilities and the ash shell
 
 name ca-bundle
@@ -35,45 +35,55 @@ file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/ca-bun
 summary Mozilla root certificates
 
 name chimerautils
-version 15.1.2-1
+version 15.1.2-2
 license BSD-2-Clause AND BSD-3-Clause AND ISC
 size 45056
-sha256 3d9643b61422a3f2af3c24e4ed61921c268f62287fd08647db02aa5f59c79b3a
-recipe a48f2ad187ed17f2ae6f335761e7ca47900557cb368c637d746a72cb3ee7a572
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/chimerautils-15.1.2-1.stpkg
+sha256 e5f8b91d2657fed98d56996df98ec87c440619395912d636d20b87547b00c1eb
+recipe 2d2b7cc462cab5cff235b6c95c3eb6898548487989dab8819597119a0a49c0d3
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/chimerautils-15.1.2-2.stpkg
 summary BSD utilities from chimerautils
 
 name curl
-version 8.23.0-1
+version 8.23.0-2
 depends ca-bundle
 needs net
 license curl
 size 3342336
-sha256 3780d194238a6c5d026c268af7acc103c804375787d356236d7bbbdb61fc470d
-recipe 78e2e4a72f2236e90c6485024d38914d483777b55fee8118fe8f8597b7068537
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/curl-8.23.0-1.stpkg
+sha256 b644b42ca4f2441bbb0b2312065befa7ab070bc3522037f2f6765cf3aabc84e5
+recipe 96614ad19c7d4cb1b34b6a26e7dffecd7cd3fffe40a277224e044b8177563872
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/curl-8.23.0-2.stpkg
 summary curl transfer tool
 
 name doomgeneric
-version e257a09527062bfb986b6e5e0780839b6cbd5b71-1
+version e257a09527062bfb986b6e5e0780839b6cbd5b71-2
 provides doom
 depends freedoom
 needs display input
 license GPL-2.0-or-later
 size 499712
-sha256 1084f70ec10a9e63dfa50eac7f73353c287d059d8178f5dac398ddc905069db4
-recipe 54904474c17f18a2493aebbfffc8fc39d1d9d61bcee8b1d91d4b70023a0277cc
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/doomgeneric-e257a095-1.stpkg
-source https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/doomgeneric-e257a095-1-src.tar.xz
+sha256 17753b08098a74552847c4d354afb22cf3310d207d61a6135c994f31f01bd926
+recipe a1a821514276e8fb2db10038b9418e3fe84a27a8313d572257b02420d75f95df
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/doomgeneric-e257a095-2.stpkg
+source https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/doomgeneric-e257a095-2-src.tar.xz
 summary Doom engine (Doomgeneric)
 
+name dropbear
+version 2026.94-1
+needs net
+license MIT AND BSD-2-Clause
+size 286720
+sha256 677cd67f67d6dfcf1207aa8d2f7efe4763904924fd4034122b3aa6d430112007
+recipe b315bb830ca9cdb7b3959a30d979cceb20a68d54402d6c9d36939809072ca65b
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/dropbear-2026.94-1.stpkg
+summary Dropbear SSH server
+
 name f-stack
-version dev-52514377-1
+version dev-52514377-2
 license BSD-2-Clause AND BSD-3-Clause AND BSD-4-Clause AND RSA-MD AND Beerware AND MIT-CMU AND ISC AND MIT
 size 720896
-sha256 93d2027c8fbce0eb5cdf0541ffc5135ea3728fd76c0e28d2c8f095fb9406502b
-recipe 5df8baa63d049965db79971f6b9a033d2d5b3cbda2a28e699837066c9d68e4aa
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/f-stack-dev-52514377-1.stpkg
+sha256 a5dc4c14b766a211c3d70a908b49ba5bd4bdc227b5428889a98f6ad3ba049d95
+recipe 6c4e8a533af538944d682b6f79abbac177d9bc3434e6f07b961ddf78878954e9
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/f-stack-dev-52514377-2.stpkg
 summary F-Stack user space TCP/IP stack
 
 name freedoom
@@ -86,53 +96,53 @@ file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/freedo
 summary Freedoom Phase 1 game data
 
 name htop
-version 3.5.3-1
+version 3.5.3-2
 depends ncurses
 license GPL-2.0-or-later
 size 454656
-sha256 8d6aec3a3694526e23b1f13cbfbe81ed9acfd435650efb50ad98b3187fa91c9a
-recipe 14173d4b229666b155eb339245ff92c7812ac2e7e279aebe09005fe02c1e72eb
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/htop-3.5.3-1.stpkg
-source https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/htop-3.5.3-1-src.tar.xz
+sha256 fdbbdc3751a85c92a00f00dc69a19d7d4bf29c9017a8fba3129ac479caa20dcc
+recipe d6a456f9be34bcabb202466f745f3e0d3f591a827c8438cf8cbfc4d43186b82b
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/htop-3.5.3-2.stpkg
+source https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/htop-3.5.3-2-src.tar.xz
 summary htop process viewer
 
 name nano
-version 9.2-1
+version 9.2-2
 depends ncurses
 license GPL-3.0-or-later
 size 630784
-sha256 e5e57d68de768c79aebad98b1afd822175d2a39df81da51a35eef5b19a7026f5
-recipe 8215a9f92c3dff94c934f395ab471c9bf4390e858cdb762ec352da6b7d6ef102
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/nano-9.2-1.stpkg
-source https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/nano-9.2-1-src.tar.xz
+sha256 14611b7739a960acc523fa51cae78b2563241416b5bbae4c8954dbf744f60354
+recipe 1f639bfcc127f543c1153c1718d1eee5e3fcee18ec310e7cc01232b09d32b8da
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/nano-9.2-2.stpkg
+source https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/nano-9.2-2-src.tar.xz
 summary GNU nano text editor
 
 name nbase
-version 10.1.0.29-1
+version 10.1.0.29-2
 license BSD-3-Clause
 size 32768
-sha256 584f95fab5a8e4ef77a430883c5164068331ab294d9a337d52cd04868cdba5a7
-recipe c10259a19e544000979327a3bcf283cb3750eb0268670840be7bbf448f9fd535
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/nbase-10.1.0.29-1.stpkg
+sha256 9592872da3861f5a8f977c6d46a167dab5415ab785b044111c075ee7ae734efc
+recipe 134b8791eae3842499b74eabe6390174cf294ebf0c615eb69edce377d431aa15
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/nbase-10.1.0.29-2.stpkg
 summary NetBSD base utilities (nbase)
 
 name ncdu
-version 1.22-1
+version 1.22-2
 depends ncurses
 license MIT
 size 245760
-sha256 4d7280303b850c7df9b98352a95ffa64c46b5c223ba2b834be855a0cff16b179
-recipe dc58ceb1cbe080b8a4f46f8c5c7a26ff8ada766d16d5d41a3a1e4018c6ee5ed4
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/ncdu-1.22-1.stpkg
+sha256 e5aa66a17202079a7ffbb059288435fab48bdfd323429c9c70e51fc2591756e5
+recipe eeadc6fc05358042a99156b0d3367ace4de21127500085b1bc341579f1353fef
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/ncdu-1.22-2.stpkg
 summary ncdu disk usage viewer
 
 name ncompress
-version 5.0-1
+version 5.0-2
 license Unlicense
 size 32768
-sha256 6f68878a16fb43ecf13e7fa66c54c5572f310054c09e7d877853f79f689a0766
-recipe 6829b9cf3345262f2604fbf10cea880889f62d70277c2e2d6488a0b64c92ec01
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/ncompress-5.0-1.stpkg
+sha256 5db5605cde34256b4a8249fe09ca99009042aa815c7e37adcc6599f95e82798f
+recipe 3517a3832cb1a04736c22e63ad3ff418dc408d90d7245e8e494d887a98db95af
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/ncompress-5.0-2.stpkg
 summary compress and uncompress (ncompress)
 
 name ncurses
@@ -145,69 +155,69 @@ file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/ncurse
 summary ncurses terminfo entries and tput
 
 name nginx
-version 1.30.6-1
+version 1.30.6-2
 needs net
 license BSD-2-Clause
 size 3850240
-sha256 17bf79004471b2e48f4d2e60380cdde3191523a16618f6ea30b034bfd268f4cf
-recipe d956acba3d2817f3c6f0f8b4b4143e819b18d25e5028a5873d726c4ce1c0b6d8
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/nginx-1.30.6-1.stpkg
+sha256 3fd0ee1a315ab8a37fbd6c24c23625738ed21f347068ddbd7aba2508eeec074e
+recipe 086db7053bf7dbece4da078f07d2be476e8dbb1423fdb0b5c2190eaa4d6814e6
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/nginx-1.30.6-2.stpkg
 summary nginx HTTP server
 
 name nginx-fast
-version 1.30.6-1
+version 1.30.6-2
 depends f-stack
 needs net
 license BSD-2-Clause
 size 5574656
-sha256 4511dac2aa6a4cbecc082ffed4dc1b2ef246789b06081be8932a16d7fa4caecc
-recipe 5025f3f46efb47eb301cd5f6bb48374bb957328141cf80284b89e0b50890a78f
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/nginx-fast-1.30.6-1.stpkg
+sha256 e982814bfffe6ddd9b37cf4332ff09c4a54ab03619adc7edefa20df637b9afde
+recipe c5b27654e5a87ae53d5db4953faaae7252642eb38686666326a390927008a662
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/nginx-fast-1.30.6-2.stpkg
 summary nginx on the F-Stack TCP/IP stack
 
 name openssl
-version 3.5.9-1
+version 3.5.9-2
 needs net
 license Apache-2.0
 size 3416064
-sha256 5b92f4392b38e48ba143fb71b290da036931d8fa8eb10fb29338a0b696f9d0fd
-recipe 6d47399137042861eaee06f1df66809176e5da1fc446b414cc31888e98c35377
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/openssl-3.5.9-1.stpkg
+sha256 52457032caa20922df21f7fdfeb5b0ccb1b1eae142cea74f0cc4818b7f603d7d
+recipe 31bb23d817789fc7b968f26acd0362d18568196cf51ad89c6f5bdd768450a000
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/openssl-3.5.9-2.stpkg
 summary OpenSSL command line tool
 
 name paxmirabilis
-version 20240817-1
+version 20240817-2
 license BSD-3-Clause AND MirOS AND ISC
 size 65536
-sha256 8a735f5dd8419e9fc8be74e25e419af2d71fcfc10beaed276ff86dedfcbca299
-recipe 8ccdf64ec49396b84294fa68af5d4e125363a737ea80d01358bac0f46ef6a630
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/paxmirabilis-20240817-1.stpkg
+sha256 6e880d62134a573abf840101ed8a91a9e962998e1ddd11e8cfb9fd1faba6f797
+recipe 9789ba9b8c90b6fcd9ebed05e68c50f60baa74eba9a67887085d3ca1fde8d38d
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/paxmirabilis-20240817-2.stpkg
 summary pax archiver of MirBSD
 
 name sbase
-version git-b30fb568-1
+version git-b30fb568-2
 license MIT
 size 36864
-sha256 17d87992b7c3130e98007be65beee229a9b3c2144d2149ed7a493325194a4755
-recipe e8845509ca56061fdfa7c6712cc34eac81af6d0bf8e8ab2c159cc67fdfb19a0e
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/sbase-git-b30fb568-1.stpkg
+sha256 79adff6a0a1b3d18986cf2a3c20a72180057f86e72a5b0d225adfc599c0e2e04
+recipe caec63908c618a4a2417a3824b1c65d7256cf730da861cd78eb75d9f031a9920
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/sbase-git-b30fb568-2.stpkg
 summary suckless base utilities (sbase)
 
 name toybox
-version 0.8.15-1
+version 0.8.15-2
 license 0BSD
 size 32768
-sha256 6e6f6cb48713c8e9df83b7d74e89c201528f1b6481b6d14fdfe80defa1387cd9
-recipe 47d5264fe84d5f1b80e586dad7243369bfe04ad6f49cc764b3807c6e7a4f57ee
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/toybox-0.8.15-1.stpkg
+sha256 755fa77892680a6ffc9ccd392b34970f5f4c4dffbab3de40144245ada154afd4
+recipe 03a7b1b3792fc1fc55391b39bea7434981c7353caad92b250d0075560b918d87
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/toybox-0.8.15-2.stpkg
 summary Toybox utilities
 
 name util-linux
-version 2.42.4-1
+version 2.42.4-2
 license GPL-2.0-or-later
 size 49152
-sha256 2c79170fe0e0183742e2c971687c01641e4eacad97a0b47855c59d629a17c6b1
-recipe 50926992ad8b4917fc64af4857cbc6dca395353fd34cbc8367337e1f6f4e34bd
-file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/util-linux-2.42.4-1.stpkg
-source https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/util-linux-2.42.4-1-src.tar.xz
+sha256 5e5eedd9d28cb840ce9e582bf1b619fef937bdef1be4979a26d119b27baf93de
+recipe 7739732898fce4e93dce02e7530c57a14b243974044c8fbd7b505659d42d09a5
+file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/util-linux-2.42.4-2.stpkg
+source https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/util-linux-2.42.4-2-src.tar.xz
 summary util-linux utilities
