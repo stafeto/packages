@@ -2,8 +2,8 @@ format 1
 repository stafeto
 series 0.5
 arch aarch64
-serial 2
-expires 2026-12-18T13:28:16Z
+serial 3
+expires 2026-12-20T10:45:04Z
 
 name bash
 version 5.3-2
@@ -155,24 +155,24 @@ file https://github.com/stafeto/packages/releases/download/v0.5.0-aarch64/ncurse
 summary ncurses terminfo entries and tput
 
 name nginx
-version 1.30.6-2
+version 1.30.7-1
 needs net
 license BSD-2-Clause
 size 3850240
-sha256 3fd0ee1a315ab8a37fbd6c24c23625738ed21f347068ddbd7aba2508eeec074e
-recipe 086db7053bf7dbece4da078f07d2be476e8dbb1423fdb0b5c2190eaa4d6814e6
-file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/nginx-1.30.6-2.stpkg
+sha256 0673a9cb80f7f28ae550719a175e65374ed475ef583bee185b0d75c9bab9df3b
+recipe 61aff8a64885ef597a04a870a837cdad47d4a293abee832bb2c307a5cb0981b7
+file https://github.com/stafeto/packages/releases/download/v0.5.2-aarch64/nginx-1.30.7-1.stpkg
 summary nginx HTTP server
 
 name nginx-fast
-version 1.30.6-2
+version 1.30.7-1
 depends f-stack
 needs net
 license BSD-2-Clause
 size 5574656
-sha256 e982814bfffe6ddd9b37cf4332ff09c4a54ab03619adc7edefa20df637b9afde
-recipe c5b27654e5a87ae53d5db4953faaae7252642eb38686666326a390927008a662
-file https://github.com/stafeto/packages/releases/download/v0.5.1-aarch64/nginx-fast-1.30.6-2.stpkg
+sha256 ed78b6dc17f0cc628e95b9cd3e2bc4217099d60c236bc786b4f4092c48a48e00
+recipe 865f2b4e4d24f7e7d26e7a75894be3ea9c06a9a64b23fdcfe36b84e004e35bc1
+file https://github.com/stafeto/packages/releases/download/v0.5.2-aarch64/nginx-fast-1.30.7-1.stpkg
 summary nginx on the F-Stack TCP/IP stack
 
 name openssl
