@@ -2,8 +2,8 @@ format 1
 repository stafeto
 series 0.6
 arch aarch64
-serial 2
-expires 2026-12-22T01:32:19Z
+serial 3
+expires 2026-12-23T13:05:26Z
 
 name bash
 version 5.3-1
